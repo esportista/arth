@@ -16,8 +16,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  border-bottom: 2px solid #333; /* Adiciona um sublinhado */
+  background-color: transparent; /* Remove a cor de fundo */
+  color: #333; /* Altera a cor do texto para preto ou outra cor de sua preferência */
 }
 
 header img {

@@ -23,7 +23,7 @@ body {
 
 /* Header */
 #topo {
-    background: rgba(34, 34, 34, 0.9); /* Fundo semi-transparente */
+    background: rgba(34, 34, 34, 0); /* Fundo totalmente transparente */
     color: #fff;
     padding: 20px 0;
     display: flex;

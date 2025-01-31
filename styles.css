@@ -12,10 +12,13 @@ body {
     background-color: #f4f4f4;
     color: #333;
     background-image: url('https://esportista.github.io/arquivo/imagens/ArthurComMedalha.png'); /* Imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
     background-attachment: fixed; /* Fixa a imagem de fundo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
 }
 
 /* Header */

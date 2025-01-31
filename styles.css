@@ -1,78 +1,163 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo do corpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #444;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-}
-
-h2 {
-    font-size: 24px;
     color: #333;
 }
 
+/* Header */
+#topo {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#topo .logo h1 {
+    font-size: 2.5em;
+}
+
+#topo nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#topo nav ul li {
+    margin-left: 20px;
+}
+
+#topo nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#topo nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Imagem hero */
+.hero-image {
+    background-color: #333;
+    position: relative;
+    height: 500px;
+    background: url('arthur-hero.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+/* Seções */
+.section-padding {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
 .gallery img {
-    width: 30%;
-    margin: 10px;
+    width: 100%;
     border-radius: 8px;
 }
 
+/* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    position: relative;
 }
 
-footer a {
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .social-links a {
     color: #ffcc00;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
 }
 
-footer a:hover {
+footer .social-links a:hover {
     text-decoration: underline;
 }

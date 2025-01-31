@@ -11,19 +11,11 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    background-image: url('https://esportista.github.io/arquivo/imagens/ArthurComMedalha.png'); /* Imagem de fundo */
-    background-size: contain; /* Faz a imagem caber inteiramente sem cortes */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-attachment: fixed; /* Fixa a imagem de fundo */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove paddings padrão */
-    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
 }
 
 /* Header */
 #topo {
-    background: rgba(34, 34, 34, 0); /* Fundo totalmente transparente */
+    background: #222;
     color: #fff;
     padding: 20px 0;
     display: flex;
@@ -89,9 +81,6 @@ body {
 /* Seções */
 .section-padding {
     padding: 50px 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para as seções */
-    margin: 20px;
-    border-radius: 10px;
 }
 
 h2 {
@@ -151,7 +140,7 @@ h2 {
 
 /* Rodapé */
 footer {
-    background-color: rgba(34, 34, 34, 0.9); /* Fundo semi-transparente */
+    background-color: #222;
     color: #fff;
     padding: 20px 0;
     text-align: center;

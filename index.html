@@ -3,60 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo Messi</title>
+    <meta name="description" content="Site oficial de Arthur, um dos maiores jogadores de futebol do mundo. Acompanhe sua jornada, notícias e vídeos exclusivos.">
+    <title>Arthur - O Craque</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Leo Messi</h1>
-        <p>Bem-vindo ao site oficial de Lionel Messi, o maior jogador de futebol do mundo.</p>
+    <header id="topo">
+        <div class="logo">
+            <h1>Arthur</h1>
+            <p>O craque que brilha nos campos</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#noticias">Notícias</a></li>
-            <li><a href="#fotos">Fotos</a></li>
-            <li><a href="#videos">Vídeos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
     <section id="home">
-        <h2>Início</h2>
-        <p>Seja bem-vindo ao site oficial de Lionel Messi. Aqui você encontrará as últimas notícias e mais sobre sua carreira.</p>
-    </section>
-
-    <section id="noticias">
-        <h2>Últimas Notícias</h2>
-        <div class="card">
-            <h3>Título da Notícia</h3>
-            <p>Resumo da notícia...</p>
+        <div class="hero-image">
+            <img src="arthur-hero.jpg" alt="Arthur em ação" />
+            <div class="hero-text">
+                <h2>Bem-vindo ao mundo de Arthur</h2>
+                <p>Assista aos momentos mais épicos e descubra tudo sobre a carreira desse ícone do futebol mundial.</p>
+            </div>
         </div>
     </section>
 
-    <section id="fotos">
+    <section id="noticias" class="section-padding">
+        <h2>Últimas Notícias</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="noticia1.jpg" alt="Notícia 1">
+                <div class="card-content">
+                    <h3>Arthur conquista mais um título!</h3>
+                    <p>Leia tudo sobre a vitória que consolidou sua posição entre os melhores jogadores do mundo...</p>
+                    <a href="#">Leia mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="noticia2.jpg" alt="Notícia 2">
+                <div class="card-content">
+                    <h3>Arthur brilha na última partida</h3>
+                    <p>Veja como o craque deixou sua marca na última partida decisiva...</p>
+                    <a href="#">Leia mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fotos" class="section-padding">
         <h2>Galeria de Fotos</h2>
         <div class="gallery">
-            <img src="foto1.jpg" alt="Foto 1">
-            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto1.jpg" alt="Arthur na vitória" />
+            <img src="foto2.jpg" alt="Arthur celebrando gol" />
+            <img src="foto3.jpg" alt="Arthur treinando" />
         </div>
     </section>
 
-    <section id="videos">
-        <h2>Vídeos</h2>
+    <section id="videos" class="section-padding">
+        <h2>Vídeos Exclusivos</h2>
         <div class="video-container">
             <video controls>
                 <source src="video1.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
     </section>
 
     <footer id="contato">
-        <p>&copy; 2025 Leo Messi | <a href="#">Política de Privacidade</a></p>
-        <p>Redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 Arthur | <a href="#">Política de Privacidade</a></p>
+            <div class="social-links">
+                <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

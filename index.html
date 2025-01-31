@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Página Web</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Messi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <!-- Logo -->
-    <img src="https://esportista.github.io/arquivo/imagens/Esportista.png" alt="Logo da Página">
-    
-    <!-- Botão do Menu -->
-    <div class="menu-button" onclick="toggleMenu()">
-      <img src="https://esportista.github.io/arquivo/imagens/botaoMenu.png" alt="Menu">
-    </div>
 
-    <!-- Menu de Opções -->
-    <div class="menu" id="menu">
-      <ul>
-        <li><a href="#titulo1">Home</a></li>
-        <li><a href="#titulo2">Opção 2</a></li>
-        <li><a href="#titulo3">Opção 3</a></li>
-        <li><a href="#titulo4">Opção 4</a></li>
-        <li><a href="#titulo5">Opção 5</a></li>
-        <li><a href="#titulo6">Opção 6</a></li>
-      </ul>
-    </div>
-  </header>
+    <header>
+        <h1>Leo Messi</h1>
+        <p>Bem-vindo ao site oficial de Lionel Messi, o maior jogador de futebol do mundo.</p>
+    </header>
 
-  <!-- Body -->
-  <main>
-    <h2 id="titulo1" class="text-style-1">Arthur</h2>
-    <p class="text-style-4">Atleta de futsal</p>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#videos">Vídeos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
-    <h2 id="titulo2" class="text-style-2">Título 2</h2>
-    <p class="text-style-5">Conteúdo relacionado à Opção 2.</p>
+    <section id="home">
+        <h2>Início</h2>
+        <p>Seja bem-vindo ao site oficial de Lionel Messi. Aqui você encontrará as últimas notícias e mais sobre sua carreira.</p>
+    </section>
 
-    <h2 id="titulo3" class="text-style-3">Título 3</h2>
-    <p class="text-style-6">Conteúdo relacionado à Opção 3.</p>
+    <section id="noticias">
+        <h2>Últimas Notícias</h2>
+        <div class="card">
+            <h3>Título da Notícia</h3>
+            <p>Resumo da notícia...</p>
+        </div>
+    </section>
 
-    <h2 id="titulo4" class="text-style-4">Título 4</h2>
-    <p class="text-style-1">Conteúdo relacionado à Opção 4.</p>
+    <section id="fotos">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+    </section>
 
-    <h2 id="titulo5" class="text-style-5">Título 5</h2>
-    <p class="text-style-2">Conteúdo relacionado à Opção 5.</p>
+    <section id="videos">
+        <h2>Vídeos</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </section>
 
-    <h2 id="titulo6" class="text-style-6">Título 6</h2>
-    <p class="text-style-3">Conteúdo relacionado à Opção 6.</p>
-  </main>
+    <footer id="contato">
+        <p>&copy; 2025 Leo Messi | <a href="#">Política de Privacidade</a></p>
+        <p>Redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>Contato: email@exemplo.com | Telefone: (00) 1234-5678</p>
-    <p>&copy; 2023 Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

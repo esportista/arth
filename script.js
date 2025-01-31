@@ -1,9 +1,10 @@
-// Função para exibir/ocultar o menu
-function toggleMenu() {
-  const menu = document.getElementById('menu');
-  if (menu.style.display === 'block') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'block';
-  }
-}
+// Script para funcionalidades interativas se necessário
+// Exemplo de um efeito simples para o menu
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('mouseover', () => {
+        link.style.color = '#ffcc00';
+    });
+    link.addEventListener('mouseout', () => {
+        link.style.color = 'white';
+    });
+});

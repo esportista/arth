@@ -368,7 +368,7 @@ button {
 }
 
 .text-bg figure img {
-     width: 55%;
+     width: 25%; /* Tamanho da imagem do juventos */
 }
 
 .text-bg p {

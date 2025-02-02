@@ -392,7 +392,7 @@ button {
 }
 
 .text-bg figure img {
-     width: 55%; /* Tamanho da imagem principal */
+     width: 100%; /* Tamanho da imagem principal */
 }
 
 .text-bg p {

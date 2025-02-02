@@ -530,14 +530,14 @@ button {
 }
 
 .classes_box figure img {
-     width: 50%;
+     width: 60%;
 }
 
 .classes_box h3 {
      font-weight: bold;
      margin-top: 70px;
      line-height: 30px;
-     font-size: 40px;
+     font-size: 30px;
      color: #080206;
      text-transform: uppercase;
      transition: ease-in all 0.5s;

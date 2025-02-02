@@ -489,7 +489,7 @@ button {
 }
 
 .about .titlepage figure img {
-     width: 100%;
+     width: 55%; /* Tamanho da imagem do logo Juventus */
      margin-top: -60px;
 }
 

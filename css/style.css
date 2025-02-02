@@ -325,34 +325,32 @@ button {
 /** banner section **/
 
 .banner_main {
-     /** background: url(../images/banner.jpg); **/
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     min-height: 744px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 744px;
 }
 
 .text-bg {
-     text-align: left;
+    text-align: left;
 }
 
 .text-bg h1 {
-     color: #080206;
-     font-size: 69px;
-     line-height: 91px;
-     padding-bottom: 45px;
-     font-weight: bold;
-     text-transform: uppercase;
-     margin-top: 266px;
-     z-index: -1;
+    color: #080206;
+    font-size: 69px;
+    line-height: 91px;
+    padding-bottom: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 266px;
 }
 
 .midil_img, .midil_img2, .midil_img3, .midil_img4 {
     position: relative;
     width: 100%;
-    height: 100vh; /* ocupa toda a altura da tela */
-    background-size: cover; /* cobre toda a tela de forma responsiva */
-    background-position: center; /* centraliza a imagem */
-    background-repeat: no-repeat; 
+    min-height: 100vh; /* Ajustado para melhor responsividade */
+    background-size: cover; /* Cobre toda a tela de forma responsiva */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
 }
@@ -373,6 +371,7 @@ button {
     background-image: url(../images/banner4.png);
 }
 
+/* Removido o pseudo-elemento ::before ou ajustado para transparência */
 .midil_img::before,
 .midil_img2::before,
 .midil_img3::before,
@@ -383,61 +382,69 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit; 
-    opacity: 1;
+    background: transparent; /* Evita conflito com a imagem de fundo */
+    opacity: 0; /* Torna o pseudo-elemento invisível */
 }
 
 .text-bg figure {
-     margin: -27% 0 0 33%;
+    margin: -27% 0 0 33%;
 }
 
 .text-bg figure img {
-     width: 400%; /* Tamanho da imagem principal */
+    width: 400%;
 }
 
 .text-bg p {
-     color: #080206;
-     font-size: 17px;
-     line-height: 28px;
-     margin-top: -202px;
+    color: #080206;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: -202px;
 }
 
 .text-bg .read_more {
-     color: #1a1a1a !important;
-     margin-top: 50px !important;
+    color: #1a1a1a !important;
+    margin-top: 50px !important;
 }
 
 #banner1 .carousel-caption {
-     position: inherit;
-     padding: 0;
+    position: inherit;
+    padding: 0;
 }
 
 #banner1 .carousel-indicators {
-     display: block;
-     right: inherit;
-     margin-left: 9px;
-     bottom: -66px;
+    display: block;
+    right: inherit;
+    margin-left: 9px;
+    bottom: -66px;
 }
 
 #banner1 .carousel-indicators li.active {
-     background-color: #f00;
+    background-color: #f00;
 }
 
 #banner1 .carousel-indicators li {
-     background-color: #000;
-     width: 20px;
-     height: 20px;
-     border-radius: 20px;
-     margin: 4px 0;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 4px 0;
 }
 
 #banner1 .carousel-control-prev,
 #banner1 .carousel-control-next {
-     display: none;
+    display: none;
 }
 
-
 /** end banner section **/
+
+/* Ajustes para garantir que a tela ocupe 100% da altura */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal desnecessária */
+}
 
 .titlepage {
      text-align: center;
